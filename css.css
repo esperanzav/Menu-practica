@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,200;1,100;1,600&family=Cormorant+SC:wght@300;600&family=Noto+Sans:ital,wght@0,200;0,400;1,500&family=Poppins:ital,wght@0,300;1,400&display=swap');
+
+
+
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+body{
+   /* background: #586dc4;*/
+   background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav{
+    width: 300px;
+}
+
+.nav_link{
+color: #303440;
+display: block;
+padding: 15px 0;
+text-decoration: none;
+}
+
+.nav_link--inside{
+    border-radius: 6px;
+    padding-left: 20px;
+    text-align: left;
+}
+
+.nav-link--inside:hover{/*son los elementos q estan dentro*/
+    background: #faf8fa;
+}
+
+.list{
+width: 100%;
+height: 100vh;
+display: flex;
+justify-content: center;
+flex-direction: column;/*pondra verticalmente a los elementos*/
+border-radius: 0 16px 16px 0;
+background: #fff;
+}
+
+.list_item{
+    list-style-type: none;/*quita la biñeta*/
+    width: 100%;
+    text-align: center;
+    overflow:hidden;
+}
+
+.list_item--click{
+    cursor: pointer;
+}
+
+.list_button{/*esto es lo q estoy dentro*/
+    display: flex;
+    align-items: center;/*lo centra verticalmente*/
+    gap: 1em;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.arrow .list_arrow{/*este clase se la agrego por js*/
+ transform: rotate(90deg);
+}
+
+.list_arrow{/*para las flechas*/
+    margin-left: auto;
+    transition: transform .3s;
+}
+
+.list_show{/*son los elementos q se mostraran y desapareceran*/
+  width: 80%;
+  margin-left: auto;
+  border-left: 2px solid #303440;
+  list-style: none;
+  transition: height .4s;
+  height: 0;
+  
+}
